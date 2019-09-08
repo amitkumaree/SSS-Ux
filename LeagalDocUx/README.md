@@ -1,3 +1,11 @@
+~~~~~~~~~~~~~~~~    command to build angular site    ~~~~~~~~~~~~~~~
+ng build --base-href=http://213.175.201.219/plesk-site-preview/admin.worldlegaldocs.com/ --prod --build-optimizer
+ **%**%*%*%* BEFORE DEPLOYING CHECK THE PROD AND DEV in service.ts **%**%*%*%*
+
+to create a component
+ng g c YOURCOMPONENTNAME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 # LeagalDocUx
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.2.
