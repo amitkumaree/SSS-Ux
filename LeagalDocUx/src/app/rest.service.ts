@@ -19,20 +19,20 @@ export class RestService {
   }
 
   public getSingle<T>(ofwhat: string, id: number): Observable<T> {
-    return this.http.get<T>(this.url + ofwhat + id);
+    return this.http.get<T>(this.url + ofwhat + '/' + id);
   }
 
-  public add<T>(what: T): Observable<T> {
-
-    return this.http.post<T>(this.url, what);
+  public add<T>(ofwhat: string, data: T): Observable<T> {
+    return this.http.post<T>((this.url + ofwhat) , data);
   }
-/* need to enhance when the api is ready
-  public update<T>(id: number, itemToUpdate: any): Observable<T> {
+
+  public update<T>(ofwhat: string, data: T): Observable<T> {
     return this.http
-      .put<T>(this.url + id, itemToUpdate);
+      .put<T>(this.url + ofwhat, data);
   }
 
-  public delete<T>(id: number): Observable<T> {
-    return this.http.delete<T>(this.url + id);
-  } */
+  public delete<T>(ofwhat: string, id: number): Observable<T> {
+    debugger;
+    return this.http.delete<T>(this.url + ofwhat + '/' + id);
+  }
 }

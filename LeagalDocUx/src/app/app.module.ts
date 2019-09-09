@@ -11,6 +11,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { Configuration } from './app.constants';
 import { FormsModule } from '@angular/forms';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { IndustryComponent } from './industry/industry.component';
+import { DocumentComponent } from './document/document.component';
 
 @NgModule({
   declarations: [
@@ -18,10 +21,12 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     LoginComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    IndustryComponent,
+    DocumentComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule,
+    BrowserModule, HttpClientModule, AngularFontAwesomeModule,
     AppRoutingModule, NgbModule, FormsModule
   ],
   providers: [],

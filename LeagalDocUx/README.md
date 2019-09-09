@@ -6,6 +6,11 @@ to create a component
 ng g c YOURCOMPONENTNAME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+installation for this project 
+1. Angular
+2. Bootstrap CSS only 
+3. Angular boostrap
+4. Material icon (npm install material-design-icons --save)
 # LeagalDocUx
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.2.
